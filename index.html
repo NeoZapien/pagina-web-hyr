@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Ingeniería y Construcción - Construimos tus Sueños</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos (Feather Icons) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Estilos personalizados para aplicar las fuentes */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* gris muy claro */
+        }
+        h1, h2, h3, .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Efecto de superposición para imágenes de proyectos */
+        .project-overlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .group:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                 <img src="http://googleusercontent.com/file_content/11" alt="Logo HR Ingeniería y Construcción" class="h-14">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition duration-300">Servicios</a>
+                <a href="#proyectos" class="text-gray-600 hover:text-blue-600 transition duration-300">Proyectos</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-blue-600 transition duration-300">Nosotros</a>
+                <a href="#contacto" class="bg-blue-600 text-white font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+                    Contáctanos
+                </a>
+            </div>
+            <!-- Botón de menú para móviles -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+        <!-- Menú móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#servicios" class="block py-2 text-gray-600 hover:text-blue-600">Servicios</a>
+            <a href="#proyectos" class="block py-2 text-gray-600 hover:text-blue-600">Proyectos</a>
+            <a href="#nosotros" class="block py-2 text-gray-600 hover:text-blue-600">Nosotros</a>
+            <a href="#contacto" class="block mt-2 bg-blue-600 text-white font-medium py-2 px-5 rounded-lg text-center hover:bg-blue-700">Contáctanos</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== SECCIÓN HERO ========== -->
+        <section class="relative h-[85vh] min-h-[500px] bg-cover bg-center text-white" style="background-image: url('http://googleusercontent.com/file_content/8');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-start">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 max-w-3xl font-montserrat">
+                    Construimos Realidades,<br>Creamos Futuros Duraderos.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl text-gray-200">
+                    Especialistas en proyectos residenciales, industriales y privados de alto estándar. Calidad, compromiso y precisión en cada detalle.
+                </p>
+                <a href="#contacto" class="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-xl">
+                    Cotiza tu Proyecto
+                </a>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN SERVICIOS ========== -->
+        <section id="servicios" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-montserrat">Nuestros Servicios</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                    Ofrecemos soluciones integrales de construcción adaptadas a las necesidades específicas de cada cliente, garantizando siempre la máxima calidad.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Servicio 1: Residencial -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="home" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 font-montserrat">Construcción Residencial</h3>
+                        <p class="text-gray-600">
+                            Diseñamos y construimos viviendas unifamiliares y complejos residenciales que combinan estética, funcionalidad y confort.
+                        </p>
+                    </div>
+                    <!-- Servicio 2: Industrial -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                           <i data-feather="truck" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 font-montserrat">Desarrollos Industriales</h3>
+                        <p class="text-gray-600">
+                            Ejecutamos proyectos de naves industriales, bodegas y centros de distribución optimizados para la eficiencia operativa.
+                        </p>
+                    </div>
+                    <!-- Servicio 3: Privados -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="briefcase" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 font-montserrat">Proyectos Privados</h3>
+                        <p class="text-gray-600">
+                            Realizamos obras comerciales, oficinas y proyectos a medida, enfocados en la imagen corporativa y la experiencia del usuario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN PROYECTOS ========== -->
+        <section id="proyectos" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-montserrat">Proyectos Destacados</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyecto 1 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/3" alt="Librería con diseño de árbol" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Librería Marta Brunet</h3>
+                                <p class="text-sm">Diseño de Interiores Comercial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/1" alt="Laboratorio financiero" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Laboratorio Financiero UdeC</h3>
+                                <p class="text-sm">Habilitación de Espacios Educativos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/7" alt="Fachada de librería" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Fondo de Cultura Económica</h3>
+                                <p class="text-sm">Remodelación de Fachada Comercial</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Proyecto 4 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/6" alt="Oficinas corporativas modernas" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Oficinas Corporativas</h3>
+                                <p class="text-sm">Acondicionamiento de Espacios de Trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Proyecto 5 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/10" alt="Obras civiles en terreno" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Obras Civiles</h3>
+                                <p class="text-sm">Proyectos de Infraestructura</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Proyecto 6 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://googleusercontent.com/file_content/4" alt="Diseño interior de librería" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Diseño Interior Comercial</h3>
+                                <p class="text-sm">Mobiliario y Terminaciones a Medida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN NOSOTROS ========== -->
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="http://googleusercontent.com/file_content/5" alt="Equipo de la constructora" class="rounded-lg shadow-xl w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 font-montserrat">Más de 20 Años de Experiencia</h2>
+                    <p class="text-gray-600 mb-6">
+                        Somos una empresa familiar con una sólida trayectoria en el sector de la construcción. Nuestra filosofía se basa en tres pilares fundamentales:
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full p-2 mr-4">
+                                <i data-feather="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Calidad Insuperable</h4>
+                                <p class="text-gray-600">Utilizamos los mejores materiales y contamos con un equipo de profesionales altamente cualificados.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full p-2 mr-4">
+                                <i data-feather="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Compromiso con el Cliente</h4>
+                                <p class="text-gray-600">Mantenemos una comunicación transparente y nos adaptamos a tus necesidades en cada fase del proyecto.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                           <div class="bg-green-100 text-green-600 rounded-full p-2 mr-4">
+                                <i data-feather="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Puntualidad en la Entrega</h4>
+                                <p class="text-gray-600">Cumplimos rigurosamente los plazos acordados, porque sabemos que tu tiempo es valioso.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN CONTACTO ========== -->
+        <section id="contacto" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 lg:p-16 max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-montserrat">Hablemos de tu Próximo Proyecto</h2>
+                    <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+                        Completa el formulario y nuestro equipo se pondrá en contacto contigo a la brevedad para asesorarte.
+                    </p>
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nombre Completo</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Tipo de Servicio de Interés</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                                <option>Selecciona un servicio</option>
+                                <option>Construcción Residencial</option>
+                                <option>Desarrollo Industrial</option>
+                                <option>Proyecto Privado / Comercial</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-10 rounded-lg text-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                                Enviar Solicitud
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-montserrat">HR INGENIERÍA Y CONSTRUCCIÓN</h4>
+                    <p class="text-gray-400">Construyendo el futuro con la solidez y confianza que nos caracteriza.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-montserrat">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Servicios</a></li>
+                        <li><a href="#proyectos" class="text-gray-400 hover:text-white">Proyectos</a></li>
+                        <li><a href="#nosotros" class="text-gray-400 hover:text-white">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-montserrat">Contacto</h4>
+                    <p class="text-gray-400">Av. Principal 123, Santiago</p>
+                    <p class="text-gray-400">contacto@hrycia.cl</p>
+                    <p class="text-gray-400">+56 2 1234 5678</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 HR Ingeniería y Construcción. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar Feather Icons
+        feather.replace();
+
+        // Lógica para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
