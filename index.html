@@ -65,21 +65,26 @@
     </header>
 
     <main>
+
         <!-- ========== SECCIÓN HERO ========== -->
-        <section class="relative h-[85vh] min-h-[500px] bg-cover bg-center text-white" style="background-image: url('http://googleusercontent.com/file_content/8');">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-start">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 max-w-3xl font-montserrat">
-                    Construimos Realidades,<br>Creamos Futuros Duraderos.
-                </h1>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl text-gray-200">
-                    Especialistas en proyectos residenciales, industriales y privados de alto estándar. Calidad, compromiso y precisión en cada detalle.
-                </p>
-                <a href="#contacto" class="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-xl">
-                    Cotiza tu Proyecto
-                </a>
+        <section class="relative h-[85vh] min-h-[500px] bg-cover bg-center text-white" style="background-image: url('images/hero1.jpg');">
+            <!-- Overlay más oscuro para mayor contraste -->
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative container mx-auto px-6 h-full flex justify-center items-center text-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 md:mb-8 w-full max-w-5xl font-montserrat">
+                        Construimos Realidades,<br>Creamos Futuros Duraderos.
+                    </h1>
+                    <p class="text-lg md:text-xl mb-10 md:mb-12 w-full max-w-3xl text-gray-200">
+                        Especialistas en proyectos residenciales, industriales y privados de alto estándar. Calidad, compromiso y precisión en cada detalle.
+                    </p>
+                    <a href="#contacto" class="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-xl">
+                        Cotiza tu Proyecto
+                    </a>
+                </div>
             </div>
         </section>
+
 
         <!-- ========== SECCIÓN SERVICIOS ========== -->
         <section id="servicios" class="py-20 bg-white">
@@ -128,63 +133,87 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-montserrat">Proyectos Destacados</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Proyecto 1 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/3" alt="Librería con diseño de árbol" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <!-- Primera fila -->
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/ArbolV1.JPG" alt="Proyecto Árbol" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Librería Marta Brunet</h3>
-                                <p class="text-sm">Diseño de Interiores Comercial</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Árbol</h3>
+                                <p class="text-sm">Diseño de Interiores</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Proyecto 2 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/1" alt="Laboratorio financiero" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/TerrazaV2.jpg" alt="Proyecto Terraza" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Laboratorio Financiero UdeC</h3>
-                                <p class="text-sm">Habilitación de Espacios Educativos</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Terraza</h3>
+                                <p class="text-sm">Espacios al Aire Libre</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Proyecto 3 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/7" alt="Fachada de librería" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/TechoV2.jpg" alt="Proyecto Techo" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Fondo de Cultura Económica</h3>
-                                <p class="text-sm">Remodelación de Fachada Comercial</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Techo</h3>
+                                <p class="text-sm">Cubiertas y Techumbres</p>
                             </div>
                         </div>
                     </div>
-                     <!-- Proyecto 4 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/6" alt="Oficinas corporativas modernas" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <!-- Segunda fila -->
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Labv1.jpg" alt="Proyecto Laboratorio" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Oficinas Corporativas</h3>
-                                <p class="text-sm">Acondicionamiento de Espacios de Trabajo</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Laboratorio</h3>
+                                <p class="text-sm">Espacios Científicos</p>
                             </div>
                         </div>
                     </div>
-                     <!-- Proyecto 5 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/10" alt="Obras civiles en terreno" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Plazav2.jpg" alt="Proyecto Plaza" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Obras Civiles</h3>
-                                <p class="text-sm">Proyectos de Infraestructura</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Plaza</h3>
+                                <p class="text-sm">Espacios Públicos</p>
                             </div>
                         </div>
                     </div>
-                     <!-- Proyecto 6 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="http://googleusercontent.com/file_content/4" alt="Diseño interior de librería" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/30 project-overlay opacity-0 flex items-end p-6">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Ventanalv1.jpg" alt="Proyecto Ventanal" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <div class="text-white">
-                                <h3 class="text-xl font-bold font-montserrat">Diseño Interior Comercial</h3>
-                                <p class="text-sm">Mobiliario y Terminaciones a Medida</p>
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Ventanal</h3>
+                                <p class="text-sm">Diseño Moderno</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tercera fila -->
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Ventanalv1.jpg" alt="Proyecto Ventanal" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Ventanal</h3>
+                                <p class="text-sm">Diseño Moderno</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Tubosv1.jpg" alt="Proyecto Tubos" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Tubos</h3>
+                                <p class="text-sm">Infraestructura Industrial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="images/Canchav1.jpg" alt="Proyecto Cancha" class="w-full h-96 object-cover">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold font-montserrat">Proyecto Cancha</h3>
+                                <p class="text-sm">Espacios Deportivos</p>
                             </div>
                         </div>
                     </div>
